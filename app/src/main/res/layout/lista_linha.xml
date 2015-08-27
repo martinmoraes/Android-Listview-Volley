@@ -6,13 +6,19 @@
     android:padding="8dp" >
 
     <!-- Imagem -->
-    <com.android.volley.toolbox.NetworkImageView
+    <!-- <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imagem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" /> -->
+
+    <ImageView
         android:id="@+id/imagem"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentLeft="true"
         android:layout_marginRight="8dp" />
-
     <!-- Título -->
     <TextView
         android:id="@+id/titulo"

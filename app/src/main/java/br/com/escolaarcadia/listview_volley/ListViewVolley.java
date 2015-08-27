@@ -2,20 +2,15 @@ package br.com.escolaarcadia.listview_volley;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.graphics.Color;
-import android.graphics.Movie;
-import android.graphics.drawable.ColorDrawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -70,6 +65,7 @@ public class ListViewVolley extends Activity {
                                 Filme filme = new Filme();
                                 filme.setTitulo(obj.getString("title"));
                                 filme.setImagemUrl(obj.getString("image"));
+
                                 filme.setNota(((Number) obj.get("rating")).doubleValue());
                                 filme.setAno(obj.getInt("releaseYear"));
 
@@ -118,9 +114,6 @@ public class ListViewVolley extends Activity {
             pDialog = null;
         }
     }
-
-
-
 
 
 }
