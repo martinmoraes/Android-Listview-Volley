@@ -62,7 +62,7 @@ public class CustomListAdaptador extends BaseAdapter {
         if (inflater == null)
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        if (convertView == null) {
+        if (convertView == null)
             convertView = inflater.inflate(R.layout.lista_linha, null);
 
             TextView tvTitulo = (TextView) convertView.findViewById(R.id.titulo);
@@ -98,7 +98,7 @@ public class CustomListAdaptador extends BaseAdapter {
 
             // release year
             tvAno.setText(String.valueOf(m.getAno()));
-        }
+
         return convertView;
     }
 
